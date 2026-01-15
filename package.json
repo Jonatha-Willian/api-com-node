@@ -1,24 +1,29 @@
 {
-  "name": "lista-de-contatos",
+  "name": "primeiro",
   "version": "1.0.0",
-  "main": "src/server.ts",
-  "scripts": {
-    "dev": "node --import=tsx --watch ./src/server.ts"
-  },
-  "author": "Jonatha Willian P Santos",
-  "license": "ISC",
   "description": "",
-  "dependencies": {
-    "express": "^4.19.2",
-    "helmet": "^7.1.0",
-    "passport": "^0.7.0",
-    "passport-local": "^1.0.0"
+  "license": "ISC",
+  "author": "jonatha",
+  "type": "commonjs",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node --env-file=.env --import=tsx --watch ./src/server.ts",
+    "file": "node --import=tsx --watch ./src/file.ts",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.14.2",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "@types/passport-http-bearer": "^1.0.42",
     "@types/passport-local": "^1.0.38",
-    "tsx": "^4.15.1",
-    "typescript": "^5.4.5"
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "passport": "^0.7.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0"
   }
 }
